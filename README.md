@@ -1,7 +1,10 @@
 # Node.js Passport Login
-![Register Page](./images/regsiter.png)
+![Register Page](./images/register.png)
 ![Login Page](./images/login.png)
 ![Home Page](./images/home.png)
+
+<!-- Using HTML to set width and height -->
+<img src="image.png" alt="Description" width="300" height="200">
 
 This is a simple user authentication system built with **Node.js** and **Passport.js**. The application provides a **login** and **registration system** with **sessions**, allowing users to log in with their credentials securely. This project demonstrates how to implement **authentication** in a Node.js application using **Passport.js**.
 
