@@ -1,1 +1,10 @@
 dotenv
+express
+ejs
+nodemon
+bycrpt 
+passport
+passport-local
+express-session
+express-flash
+method-override
