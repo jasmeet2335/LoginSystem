@@ -1,16 +1,25 @@
-<h1>Login</h1>
-<% if(messages.error) {%>
-    <%=messages.error %>
-<% } %>
-<form action="/login" method="POST">
-    <div>
-        <label for="email">email</label>
-        <input type="text" id="email" name="email" required>
-    </div><br>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div><br>
-    <button type="submit">Login</button>
-</form><br><br>
-<a href="/register">Register</a>
+<link rel="stylesheet" href="/css/style.css">
+<div class="container">
+    <div class='row header'>
+        <h1>Login</h1>
+        <% if(messages.error) {%>
+            <%=messages.error %>
+                <% } %>
+    </div>
+    <div class='row content'>
+        <form action="/login" method="POST">
+            <div>
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" required>
+            </div><br>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div><br>
+            <button type="submit">Login</button>
+        </form><br><br>
+    </div>
+    <div class='row footer'>
+        <a href="/register">Register</a>
+    </div>
+</div>

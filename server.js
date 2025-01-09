@@ -8,6 +8,7 @@ const passport = require('passport')
 const flash  = require('express-flash')
 const session  = require('express-session')
 const methodOverride = require('method-override')
+const path = require('path')
 const app = express()
 
 const initializePassport = require('./passport-config')
@@ -30,6 +31,8 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
+app.use(express.static(path.join(__dirname, "/public")))
+
 
 app.get("/", checkAuthenticated, (req, res) => {
     res.render('index.ejs', { name: req.user.name });
